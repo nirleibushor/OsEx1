@@ -1,0 +1,14 @@
+kobi, login2
+Kobi Tal (201377975), Student Name2 (ID2)
+EX: 1
+
+Assignment 1:
+When running with a single argument:
+It creates a directory tree of Welcome/To and inside, it creates a file named OS2018.
+In this file, it writes:
+"kobi\nIf you haven't read the course guidelines yet --- do it right now!\n5".
+Then delete the directory tree
+We guess that for each user, it writes his own name.
+
+Assignment 2:
+
