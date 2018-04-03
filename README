@@ -1,14 +1,36 @@
-kobi, login2
-Kobi Tal (201377975), Student Name2 (ID2)
+kobi, nirleibushor
+Kobi Tal (201377975), Nir Leibushor (200877819)
 EX: 1
 
 Assignment 1:
 When running with a single argument:
 It creates a directory tree of Welcome/To and inside, it creates a file named OS2018.
 In this file, it writes:
-"kobi\nIf you haven't read the course guidelines yet --- do it right now!\n5".
-Then delete the directory tree
-We guess that for each user, it writes his own name.
+"<user-name>\nIf you haven't read the course guidelines yet --- do it right now!\n<cmd-arg>".
+Then delete the directory tree.
+user-name is the logged in CS user name, and cmd-arg is any command line argument given to WhatIDO.
 
 Assignment 2:
+Our measurements are as we expected, on host (no VM, all in nano seconds):
 
+osm_operation_time: 1.320001
+osm_function_time: 4.071004
+osm_syscall_time: 1056.907057
+
+So we get that the time required for a standard function call is over 3 times longer than the time which is required for
+a simple addition operation, and the time required for a system call is over 200 times longer than the time which is
+required for a standard function call.
+
+Also, we can clearly see the timing influence of the overhead involved in virtualization, as theses are the timings we
+got from running the program on the VM:
+osm_operation_time: 6.549007
+osm_function_time: 83.352083
+osm_syscall_time: 1242.079242
+
+Except for the VM overhead, we see also bigger magnitudes between the timing of different operations on the VM.
+
+We chose to use loop unwinding, in order to give less significance to the backround operations being executed as a
+result of using the loops themselves, which do not differ between our measurements for the different operations.
+
+We chose to present the values in the bar graph when the scale is logarithmic, in order to be able to present good
+comparison of these values, although the time for a system call is much larger then the others.

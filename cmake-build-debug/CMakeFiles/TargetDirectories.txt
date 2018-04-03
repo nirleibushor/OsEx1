@@ -1,0 +1,3 @@
+/cs/usr/nirleibushor/ClionProjects/OsEx1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/cs/usr/nirleibushor/ClionProjects/OsEx1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cs/usr/nirleibushor/ClionProjects/OsEx1/cmake-build-debug/CMakeFiles/ex1.dir

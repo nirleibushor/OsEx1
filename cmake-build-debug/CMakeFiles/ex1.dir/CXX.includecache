@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cs/usr/nirleibushor/ClionProjects/OsEx1/osm.cpp
+stdio.h
+-
+sys/time.h
+-
+iostream
+-
+cstring
+-
+osm.h
+/cs/usr/nirleibushor/ClionProjects/OsEx1/osm.h
+
+/cs/usr/nirleibushor/ClionProjects/OsEx1/osm.h
+
